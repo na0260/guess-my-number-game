@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GMN - Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg-dark">
+    <header class="pt-lg-5 pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+            <h1 class="title">GMN.IO</h1>
+          </div>
+          <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
+            <button onClick="window.location.reload()" class="play-again-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  fill="currentColor"
+                  d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                ></path>
+              </svg>
+              <span>Try Again</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row pt-lg-5 pb-lg-5 pt-3 pb-3">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control text-center guess-value"
+              value=""
+              disabled
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control text-center main-value"
+              value="?"
+              disabled
+            />
+          </div>
+        </div>
+        <div class="row pt-lg-5 pb-lg-5 pt-3 pb-3">
+          <div class="col-12 text-center">
+            <h3 class="text-primary message">Start Guessing</h3>
+          </div>
+        </div>
+        <div class="row pt-lg-5 pb-lg-5 pt-3 pb-3">
+          <div class="col-lg-3 col-6 mx-auto">
+            <div class="row text-center">
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-1">
+                  1
+                </button>
+              </div>
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-2">
+                  2
+                </button>
+              </div>
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-3">
+                  3
+                </button>
+              </div>
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-4">
+                  4
+                </button>
+              </div>
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-5">
+                  5
+                </button>
+              </div>
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-6">
+                  6
+                </button>
+              </div>
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-7">
+                  7
+                </button>
+              </div>
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-8">
+                  8
+                </button>
+              </div>
+              <div class="col-4 p-1">
+                <button class="btn btn-light btn-outline-primary w-100 press-9">
+                  9
+                </button>
+              </div>
+              <div class="col-4 p-1 mx-auto">
+                <button class="btn btn-light btn-outline-primary w-100 press-0">
+                  0
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-white text- text-center">
+            <a class="text-decoration-none" href="https://nurahmed.netlify.app/"
+              ><img
+                src="https://nurahmed.netlify.app/assets/images/logo.png"
+                alt="nur-ahmed-logo"
+                width="180px"
+            /></a>
+            <br>
+            &#169; All right reserved by
+            <a class="text-decoration-none" href="https://nurahmed.netlify.app/"
+              >Md. Nur Ahmed</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
